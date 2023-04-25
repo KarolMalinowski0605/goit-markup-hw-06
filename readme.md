@@ -1,1 +1,1 @@
-https://karolmalinowski0605.github.io/goit-markup-hw-05/
+https://karolmalinowski0605.github.io/goit-markup-hw-06/
