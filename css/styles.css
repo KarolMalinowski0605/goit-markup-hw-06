@@ -667,7 +667,7 @@ textarea {
 }
 .checkbox-input:checked + .checkbox-label {
     border: none;
-    background-image: url('/images/iconcheck.jpg');
+    background-image: url('./images/iconcheck.jpg');
 }
 
 .checkbox-control {
