@@ -78,6 +78,84 @@
                             >
                                 x
                             </button>
+                            <p>Zostaw swoje dane w formularzu poniżej</p>
+
+                            <form>
+                                <p>Imie</p>
+                                <label class="label-modal icon-input">
+                                    <svg width="18px" height="18px">
+                                        <use
+                                            href="./images/icons.svg#icon-person-black"
+                                        ></use>
+                                    </svg>
+
+                                    <input
+                                        class="input-modal"
+                                        type="text"
+                                        name="username"
+                                    />
+                                </label>
+
+                                <p>Telefon</p>
+                                <label class="label-modal icon-input">
+                                    <svg width="18px" heihgt="18px">
+                                        <use
+                                            href="./images/icons.svg#icon-phone-black"
+                                        ></use>
+                                    </svg>
+                                    <input
+                                        class="input-modal"
+                                        type="tel"
+                                        name="tel"
+                                    />
+                                </label>
+                                <p>Email</p>
+                                <label class="label-modal icon-input">
+                                    <svg width="18px" height="18px">
+                                        <use
+                                            href="./images/icons.svg#icon-email-black"
+                                        ></use>
+                                    </svg>
+                                    <input
+                                        class="input-modal"
+                                        type="email"
+                                        name="email"
+                                    />
+                                </label>
+                                <p>Komentarz</p>
+                                <label class="textarea-label">
+                                    <textarea
+                                        name="comment"
+                                        placeholder="Wprowadź tekst"
+                                    ></textarea>
+                                </label>
+                                <div class="checkbox-control">
+                                    <input
+                                        class="checkbox-input"
+                                        type="checkbox"
+                                        name="regulations-and-policy"
+                                        id="checkbox"
+                                    />
+                                    <label
+                                        for="checkbox"
+                                        class="checkbox-label"
+                                    >
+                                    </label>
+                                    <div class="regulations-and-policy-text">
+                                        Oświadczam iż akceptuję<a href="#">
+                                            &nbsp;Regulamin
+                                        </a>
+                                        &nbsp;i
+                                        <a href="#"
+                                            >&nbsp;Politykę Prywatności.</a
+                                        >
+                                    </div>
+                                </div>
+                            </form>
+
+                            <button class="buttom-modal" type="submit">
+                                Wyślij
+                            </button>
                         </div>
                     </div>
                     <button
@@ -582,6 +660,26 @@
                         </li>
                     </ul>
                 </div>
+
+                <from>
+                    <label for="user-email" class="label-footer">
+                        Zapisz się do newslettera</label
+                    >
+                    <input
+                        class="footer-input"
+                        type="email"
+                        name="email-footer"
+                        id="user-email"
+                        placeholder="E-mail"
+                    />
+
+                    <button class="footer-submit" type="submit">
+                        Zapisz się
+                        <svg class="icon-submit" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </from>
             </div>
         </footer>
         <script src="./js/modal.js"></script>

@@ -177,55 +177,6 @@ body {
     border: none;
 }
 
-.backdrop {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition-property: visibility, opacity, transform;
-    transition-delay: 250ms;
-    transition-timing-function: linear;
-}
-
-.modal {
-    transition: transform 250ms linear;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 528px;
-    height: 581px;
-    background-color: var(--brand-color-white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(45deg);
-}
-
-.close-modal {
-    position: absolute;
-    opacity: 1;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
 .icons-text {
     display: flex;
     margin-bottom: 30px;
@@ -567,4 +518,229 @@ body {
 
 img {
     vertical-align: middle;
+}
+.backdrop {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: visibility, opacity, transform;
+    transition-delay: 250ms;
+    transition-timing-function: linear;
+}
+
+.modal {
+    transition: transform 250ms linear;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: var(--brand-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0) rotate(45deg);
+}
+
+.close-modal {
+    position: absolute;
+    opacity: 1;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.modal > p {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-leading);
+}
+
+.label-modal {
+    margin-top: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: flex;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-modal:focus-within {
+    border-color: var(--brand-color-blue-button-hover);
+}
+.icon-input {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--brand-color-leading);
+}
+.icon-input:focus-within {
+    fill: var(--brand-color-blue-button-hover);
+}
+
+.input-modal {
+    display: flex;
+    padding-right: 236px;
+    border: none;
+    outline: none;
+}
+
+form > p {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--brand-color-grey-text);
+    margin-left: 40px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+textarea {
+    width: 448px;
+    height: 100px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.textarea-label {
+    display: flex;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 40px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-label:focus-within {
+    border-color: var(--brand-color-blue-button-hover);
+}
+
+.checkbox-label {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--brand-color-black);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.checkbox-input {
+    display: none;
+}
+.checkbox-input:checked + .checkbox-label {
+    border: none;
+    background-image: url('/images/iconcheck.jpg');
+}
+
+.checkbox-control {
+    display: flex;
+    margin-left: 55px;
+}
+
+.regulations-and-policy-text {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-grey-text);
+}
+
+.buttom-modal {
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--brand-color-white);
+    border: none;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.label-footer {
+    padding-top: 12px;
+    display: flex;
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color-white);
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--brand-color-background-footer);
+    padding-left: 16px;
+}
+.footer-submit {
+    position: relative;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--brand-color-white);
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    gap: 24px;
+    padding-right: 24px;
+}
+.icon-submit {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    left: 148px;
 }
