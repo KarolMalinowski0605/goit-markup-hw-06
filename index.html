@@ -81,54 +81,63 @@
                             <p>Zostaw swoje dane w formularzu poniżej</p>
 
                             <form>
-                                <p>Imie</p>
-                                <label class="label-modal icon-input">
+                                <label for="firstName" class="label-modal"
+                                    >Imie</label
+                                >
+                                <div class="input-wrapper">
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        id="firstName"
+                                    />
                                     <svg width="18px" height="18px">
                                         <use
                                             href="./images/icons.svg#icon-person-black"
                                         ></use>
                                     </svg>
+                                </div>
 
+                                <label for="telephone" class="label-modal"
+                                    >Telefon</label
+                                >
+                                <div class="input-wrapper">
                                     <input
-                                        class="input-modal"
-                                        type="text"
-                                        name="username"
+                                        id="telephone"
+                                        type="tel"
+                                        name="tel"
                                     />
-                                </label>
-
-                                <p>Telefon</p>
-                                <label class="label-modal icon-input">
-                                    <svg width="18px" heihgt="18px">
+                                    <svg width="18px" height="18px">
                                         <use
                                             href="./images/icons.svg#icon-phone-black"
                                         ></use>
                                     </svg>
+                                </div>
+
+                                <label for="E-mail" class="label-modal"
+                                    >Email</label
+                                >
+                                <div class="input-wrapper">
                                     <input
-                                        class="input-modal"
-                                        type="tel"
-                                        name="tel"
+                                        id="E-mail"
+                                        type="email"
+                                        name="email"
                                     />
-                                </label>
-                                <p>Email</p>
-                                <label class="label-modal icon-input">
                                     <svg width="18px" height="18px">
                                         <use
                                             href="./images/icons.svg#icon-email-black"
                                         ></use>
                                     </svg>
-                                    <input
-                                        class="input-modal"
-                                        type="email"
-                                        name="email"
-                                    />
-                                </label>
-                                <p>Komentarz</p>
-                                <label class="textarea-label">
-                                    <textarea
-                                        name="comment"
-                                        placeholder="Wprowadź tekst"
-                                    ></textarea>
-                                </label>
+                                </div>
+
+                                <label for="comment" class="label-modal"
+                                    >Komentarz</label
+                                >
+                                <textarea
+                                    id="comment"
+                                    name="comment"
+                                    placeholder="Wprowadź tekst"
+                                ></textarea>
+
                                 <div class="checkbox-control">
                                     <input
                                         class="checkbox-input"
@@ -141,6 +150,7 @@
                                         class="checkbox-label"
                                     >
                                     </label>
+
                                     <div class="regulations-and-policy-text">
                                         Oświadczam iż akceptuję<a href="#">
                                             &nbsp;Regulamin
