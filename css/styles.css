@@ -545,7 +545,7 @@ img {
     left: 50%;
     top: 50%;
     width: 528px;
-    height: 581px;
+    min-height: 581px;
     background-color: var(--brand-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -710,7 +710,12 @@ textarea:focus-within {
     border-radius: 4px;
     background-color: var(--brand-color-background-footer);
     padding-left: 16px;
+    color: var(--brand-color-white);
 }
+::placeholder {
+    color: var(--brand-color-white);
+}
+
 .footer-submit {
     position: relative;
     margin-left: 12px;
